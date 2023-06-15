@@ -3,6 +3,7 @@
     --dk-grey: #333;
     --max-width: 960px;
     --spacing: 4rem;
+    --img-width:350px;
 
 }
 
@@ -20,16 +21,17 @@ header {
     padding: 2rem;
 }
 h1 {
-    margin-bottom: 2rem;
-    font-size: 5vw;
+    margin-bottom: var(--spacing);
+    font-size: clamp(3rem, 5vw, 200rem);
     font-weight: bold;
     line-height: 1.4em;
+    color: var(--dk-grey);
 }
 
 h2 {
     margin-bottom: 4rem;
     text-align: center;
-    font-size: 3vw;
+    font-size: clamp(2.5rem, 3vw, 180rem);
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -111,7 +113,7 @@ section {
 }
 
 .about-container {
-    max-width: 960px;
+    max-width: var(--max-width);
     margin: 0 auto;
 }
 
@@ -175,7 +177,7 @@ article {
 footer {
     padding: var(--spacing);
     text-align: center;
-    background-color: #333;
+    background-color: var(--dk-grey);
     color: white;
 }
 
@@ -213,11 +215,11 @@ footer {
 }
 
 .github {
-    background-image: url(images/github.svg);
+    background-image: url(images/github.png);
 }
 
-.youtube {
-    background-image: url(images/youtube.svg);
+.instagram {
+    background-image: url(images/instagram.svg);
 }
 
 @media (min-width: 800px) {
@@ -231,7 +233,7 @@ footer {
 
     article {
         flex-direction: row;
-        max-width: 960px;
+        max-width: var(--max-width);
         margin: 0 auto var(--spacing);
     }
 
