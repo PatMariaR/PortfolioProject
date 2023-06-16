@@ -4,9 +4,7 @@
     --max-width: 960px;
     --spacing: 4rem;
     --img-width:350px;
-
 }
-
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -48,7 +46,7 @@ section {
 .primary-theme {
     background-color: var(--primary);
     color: white;
-    --button-color: red;
+    --button-color: white;
     --button-hover-color: var(--primary);
 }
 .button {
@@ -93,7 +91,6 @@ section {
     font-weight: bold;
 } */
 .about {
-   
     position: relative;
     margin-bottom: 100px;
     padding: 4em;
@@ -117,7 +114,7 @@ section {
     margin: 0 auto;
 }
 
-.about-img {
+ .about-img {
     max-width: 350px;
      width: 100%;
     display: block;
@@ -128,7 +125,7 @@ section {
 
 .about-img:hover {
     filter: grayscale(0);
-}
+} 
 
 p {
     margin-bottom: 1em;
@@ -172,6 +169,14 @@ article {
     height: 0;
     border-bottom: 100px solid var(--primary);
     border-left: 100vw solid transparent;
+} 
+.contact-link{
+    color: white;
+    text-decoration:underline;
+}
+.contact-link:hover{
+    color:black;
+    text-decoration: none;
 }
 
 footer {
