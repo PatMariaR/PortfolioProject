@@ -187,9 +187,9 @@ footer {
     margin-bottom: var(--spacing);
 }
 
-.social-item {
+ .social-item {
     margin: 0 2rem;
-}
+} 
 
 .social-link {
     display: block;
@@ -211,15 +211,15 @@ footer {
 }
 
 .twitter {
-    background-image: url(images/twitter.svg);
-}
-
-.github {
     background-image: url(images/github.png);
 }
 
-.instagram {
+.github {
     background-image: url(images/instagram.svg);
+}
+
+.instagram {
+    background-image: url(images/twitter.svg);
 }
 
 @media (min-width: 800px) {
